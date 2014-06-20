@@ -1,0 +1,118 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Label text style -->
+    <style name="LabelText">
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="WorkoutBodyText" parent="@style/LabelText">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SubTitleText" parent="@style/LabelText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BigTitleText" parent="@style/LabelText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LeftLabelText" parent="@style/LabelText">
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="RightLabelText" parent="@style/LabelText">
+        <item name="android:layout_marginLeft">14dp</item>
+    </style>
+
+    <!-- Used to define label size when they'r eincluded. Hack to fix relative layout bug. -->
+    <style name="LabelHack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <!-- Used by all top level elements in our workout instance linear layout. Defines their left and right margins. -->
+    <style name="WorkoutInstanceMargins">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="RemoteButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/button_background_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Begin v2.0 styles -->
+
+
+    <!-- Begin Fonts -->
+    <style name="text">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="text.XLarge">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="text.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- End fonts -->
+
+
+    <!-- Begin separator -->
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/darkBlue</item>
+    </style>
+
+    <style name="divider.thinDivider">
+        <item name="android:layout_height">2px</item>
+    </style>
+
+    <style name="divider.thickDivider">
+        <item name="android:layout_height">4dp</item>
+    </style>
+
+    <style name="verticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/darkBlue</item>
+    </style>
+
+</resources>

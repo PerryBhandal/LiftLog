@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/newTempBg"
+     >
+
+    <!-- Begin top row -->
+
+    <RelativeLayout
+        android:id="@+id/template_routine_toprow_rel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/template_routine_name"
+            style="@style/LabelText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="Dumbbell Bench Press"
+            android:textColor="@color/newTempBg"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <!-- End top row -->
+
+
+    <!-- Begin bottom row -->
+
+    <RelativeLayout
+        android:id="@+id/template_routine_bottomrow_rel"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/template_routine_lastUsed"
+            style="@style/SubTitleText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="Last Used: 9/13/2013 at 7:14AM"
+            android:textColor="@color/newTempBg" />
+    </RelativeLayout>
+
+    <!-- End bottom row -->
+    
+    <View
+        android:layout_height="6dp"
+        android:layout_width="match_parent"
+        android:background="@color/newTempBlueHeader"
+        />
+
+</LinearLayout>

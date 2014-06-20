@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:id="@+id/menu_item_collapse"
+    android:title="Collapse All"
+    android:showAsAction="never|withText" />    
+<item android:id="@+id/menu_item_expand"
+    android:title="Expand All"
+    android:showAsAction="never|withText" />   
+</menu>

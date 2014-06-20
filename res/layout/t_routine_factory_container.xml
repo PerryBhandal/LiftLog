@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <!-- NOTHING ABOVE THIS LINE. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/darkBlue"
+        android:orientation="vertical">
+
+        <!-- Begin Header -->
+
+        <LinearLayout
+            android:id="@+id/t_routine_factory_container_lay_header"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/t_routine_factory_container_header_name"
+                style="@style/text.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="Dumbbell Bench Press"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/t_routine_factory_container_header_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:src="@android:drawable/btn_dialog" />
+        </LinearLayout>
+
+        <!-- Begin Body -->
+
+        <LinearLayout
+            android:id="@+id/t_routine_factory_container_lay_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Begin position and sets label -->
+
+            <include
+                android:id="@+id/t_routine_factory_container_position"
+                layout="@layout/t_routine_factory_bodyrow" />
+
+            <View style="@style/divider.thinDivider"
+                 />
+
+            <include
+                android:id="@+id/t_routine_factory_container_sets"
+                layout="@layout/t_routine_factory_bodyrow" />
+
+            <View style="@style/divider.thinDivider"
+                 />
+            <!-- Begin Instructions -->
+
+            <LinearLayout
+                android:id="@+id/t_routine_factory_container_lay_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkGreen"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/t_routine_factory_container_instructions_title"
+                    style="@style/text.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/medBlue"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Instructions"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightBlue" >
+
+                    <TextView
+                        android:id="@+id/t_routine_factory_container_instructions_body"
+                        style="@style/text.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="In this exercise you should kill yourself."
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- NOTHING BELOW THIS LINE. -->
+
+</LinearLayout>

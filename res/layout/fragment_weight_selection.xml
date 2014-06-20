@@ -1,0 +1,101 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_weight_selection_tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0, 2, 4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_weight_selection_weightRel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#500082e4" >
+
+            <TextView
+                android:id="@+id/fragment_weight_selection_headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Weight"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fragment_weight_selection_coretext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="60dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_weight_selection_repsRel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0082e4" >
+
+            <TextView
+                android:id="@+id/fragment_weight_selection_headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Reps"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fragment_weight_selection_coretext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="60dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divider.thinDivider"
+        android:background="@color/darkBlue" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row" />
+
+    <View
+        style="@style/divider.thinDivider"
+        android:background="@color/darkBlue" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row" />
+
+    <View
+        style="@style/divider.thinDivider"
+        android:background="@color/darkBlue" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row" />
+
+    <View
+        style="@style/divider.thinDivider"
+        android:background="@color/darkBlue" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row" />
+
+</TableLayout>

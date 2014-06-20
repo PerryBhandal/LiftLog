@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:id="@+id/t_timer_bar_lay_root"
+     >
+
+    <!-- Time Selection Bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        
+        android:id="@+id/t_timer_bar_lay_timeSelector"
+         >
+        
+        <TextView
+            android:id="@+id/t_timer_bar_thirty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="30"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            android:background="@color/darkGreen"
+            />
+        
+        
+        <TextView
+            android:id="@+id/t_timer_bar_fourtyfive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="45"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            android:background="@color/lightGreen"
+            />
+        
+        <TextView
+            android:id="@+id/t_timer_bar_sixty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="60"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            android:background="@color/darkGreen"
+            />
+
+        
+        <TextView
+            android:id="@+id/t_timer_bar_ninety"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="90"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            android:background="@color/lightGreen"
+            />
+        
+        
+        <TextView
+            android:id="@+id/t_timer_bar_onetwenty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="120"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            android:background="@color/darkGreen"
+            />
+        
+    </LinearLayout>
+
+    <!-- Time progress bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/t_timer_bar_lay_timer"
+         >
+
+        <!-- Begin stop button -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:id="@+id/t_timer_bar_stop"
+            android:src="@drawable/ic_media_stop"
+            android:background="@color/lightGreen"
+             />
+
+        
+        <!-- Begin bar holder -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:progress="70"
+                android:id="@+id/t_timer_bar_progressBar"
+                android:progressDrawable="@drawable/timer_bar" />
+
+            <TextView
+                style="@style/text.XLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="87"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:id="@+id/t_timer_bar_progressText"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

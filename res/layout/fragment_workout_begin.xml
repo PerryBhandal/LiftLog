@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newTempBg"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Begin ListView -->
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="6.0dp" />
+
+        <!-- End ListView -->
+
+
+        <!-- Begin Add Routine Button -->
+
+        <LinearLayout
+            android:id="@+id/fragment_workout_begin_resumeButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ed7500"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                style="@style/BigTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resume Last Workout" />
+            
+        </LinearLayout>
+
+        <!-- End Add Routine Button -->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_workout_begin_progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</FrameLayout>

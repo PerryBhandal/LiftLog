@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.plined.liftlog"
+    android:versionCode="13"
+    android:versionName="1.13" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/liftloglogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.plined.liftlog.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkoutInstanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoutineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoutineFactoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoutineListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeightSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorkoutBeginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorkoutHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExerciseHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        
+                <activity
+            android:name=".TutorialActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

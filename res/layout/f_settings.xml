@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newTempBg"
+     >
+
+    <LinearLayout
+        android:id="@+id/f_settings_lay_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        		<!--  Begin tutorial -->
+		
+        <TextView
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Tutorial"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/lightGrey" />
+        
+        
+        
+                        <TextView
+            style="@style/text.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="The LiftLog tutorial takes less than a minute to go through, and it teaches you everything you need to know to get the most out of LiftLog. We highly recommend all users take a look at it."
+            android:textColor="@color/white" />
+                        
+                        <TextView
+            android:id="@+id/f_settings_tutorial"
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/newTempBlueHeader"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="View LiftLog Tutorial"
+            android:textColor="@color/white" />
+                        
+        <!-- Begin general settings -->
+
+        <TextView
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="General Settings"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/lightGrey" />
+
+        <!-- Begin keep awake option -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/newTempBlueHeader"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/f_settings_keepAwakeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp" />
+
+            <TextView
+                style="@style/text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Keep screen on during workout"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- End general settings -->
+
+        <!-- Begin timer option -->
+
+        <TextView
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Rest Timer"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/lightGrey" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/newTempBlueHeader"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/f_settings_timerSoundCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp" />
+
+            <TextView
+                style="@style/text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Play sound when rest timer expires."
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- End timer options -->
+
+		<!--  Begin database backup -->
+		
+        <TextView
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Backup and Restore"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/lightGrey" />
+        
+        
+                <TextView
+            android:id="@+id/f_settings_bodyText"
+            style="@style/text.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="This option allows you to backup your workout data, or restore from an existing backup. The backup contains everything you've entered in this app: every routine, every exercise, every set completed and all of its details."
+            android:textColor="@color/white" />
+                
+                <TextView
+            android:id="@+id/f_settings_backupDatabase"
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/newTempBlueHeader"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Backup Database"
+            android:textColor="@color/white" />
+                
+                                <TextView
+            android:id="@+id/f_settings_restoreDatabase"
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/darkGreen"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Restore Database"
+            android:textColor="@color/white" />
+		
+
+        <!-- Begin database deletion bit -->
+
+        <TextView
+            android:id="@+id/f_settings_titleText"
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Remove User Data"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/lightGrey" />
+
+        <!-- Begin body -->
+
+        <TextView
+            android:id="@+id/f_settings_bodyText"
+            style="@style/text.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="This option allows you to delete all workout data and restore your application to its original state. This includes all exercises, routines, workouts and application preferences."
+            android:textColor="@color/white" />
+
+        <!-- Begin confirmation checkbox -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/newTempBlueHeader"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/f_settings_deleteCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp" />
+
+            <TextView
+                style="@style/text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="I understand and accept that this operation is irreversible."
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Begin confirmation and button -->
+
+        <TextView
+            android:id="@+id/f_settings_confirmButton"
+            style="@style/text.XLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@color/newTempBlueHeader"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Delete Data"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

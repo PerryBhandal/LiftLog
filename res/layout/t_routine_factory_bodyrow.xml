@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/t_routine_factory_bodyrow_lay_root"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/t_routine_factory_bodyrow_leftText"
+        style="@style/text.Large"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:background="@color/medBlue"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Name"
+        android:textColor="@color/white" />
+
+    <!-- Begin right side -->
+
+    <LinearLayout
+        android:id="@+id/t_workout_exercise_container_lay_setHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lightBlue"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/t_routine_factory_bodyrow_right_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowleft"
+             />
+
+        <TextView
+            android:id="@+id/t_routine_factory_bodyrow_right_text"
+            style="@style/text.Large"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Upper Body"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/t_routine_factory_bodyrow_right_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowright" />
+    </LinearLayout>
+
+</LinearLayout>

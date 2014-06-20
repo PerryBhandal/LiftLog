@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/f_workout_history_deleteWorkout"
+    android:icon="@android:drawable/ic_menu_delete"
+    android:title="Delete Workout" />
+</menu>

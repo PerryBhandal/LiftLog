@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/t_workout_exercise_bodyrow_lay_root"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/t_workout_exercise_bodyrow_set"
+            style="@style/text.Large"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="5"
+            android:textColor="@color/newTempBlueHeader" />
+
+        <TextView
+            android:id="@+id/t_workout_exercise_bodyrow_weight"
+            style="@style/text.Large"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="12"
+            android:textColor="@color/newTempBlueHeader" />
+
+        <TextView
+            android:id="@+id/t_workout_exercise_bodyrow_reps"
+            style="@style/text.Large"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="24"
+            android:textColor="@color/newTempBlueHeader" />
+    </LinearLayout>
+
+    <View
+        style="@style/divider.thinDivider"
+        android:background="@color/newTempDivider"
+        />
+    
+</LinearLayout>

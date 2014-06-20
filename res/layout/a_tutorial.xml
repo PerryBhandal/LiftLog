@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/grey"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/newTempBlueHeader"
+        >
+        
+        <TextView
+            android:id="@+id/a_tutorial_prevbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/darkGreen"
+            android:text="Prev"
+            style="@style/text.XLarge"
+            android:textColor="@color/white"
+            />
+        
+                <TextView
+            android:id="@+id/a_tutorial_imgnum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="1/6"
+                        style="@style/text.XLarge"
+            android:textColor="@color/white"
+            />
+                
+                        <TextView
+            android:id="@+id/a_tutorial_nextbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/darkGreen"
+            android:text="Next"
+                        style="@style/text.XLarge"
+            android:textColor="@color/white"
+            />
+        
+    </LinearLayout>
+    <ImageView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/a_tutorial_image"
+        android:src="@drawable/one" />
+
+</LinearLayout>

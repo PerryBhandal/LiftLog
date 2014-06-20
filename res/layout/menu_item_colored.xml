@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_item_colored"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/background" >
+
+    <View
+        android:id="@+id/menu_item_col_left_color"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#b94a00" />
+
+    <View
+        android:id="@+id/menu_item_col_right_color"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:background="#ff6600" />
+
+    <ImageView
+        android:id="@+id/menu_item_col_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/menu_item_col_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="97dp"
+        android:text="Begin Workout"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+</RelativeLayout>

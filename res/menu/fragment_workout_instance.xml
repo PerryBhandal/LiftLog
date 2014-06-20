@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_add_exercise"
+        android:showAsAction="never|withText"
+        android:title="Add Exercise"/>
+    <item
+        android:id="@+id/menu_item_collapse"
+        android:showAsAction="never|withText"
+        android:title="Collapse All"/>
+    <item
+        android:id="@+id/menu_item_expand"
+        android:showAsAction="never|withText"
+        android:title="Expand All"/>
+
+</menu>

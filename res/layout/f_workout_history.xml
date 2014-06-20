@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Begin header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/darkBlue" >
+
+        <RelativeLayout
+            android:id="@+id/f_workout_history_routineRel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/ign_f_workout_history_routine_textview"
+                style="@style/text.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="Routine" />
+
+            <ImageView
+                android:id="@+id/f_workout_history_routineImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ign_f_workout_history_routine_textview" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/f_workout_history_dateRel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/ign_f_workout_history_date_textview"
+                style="@style/text.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="Date" />
+
+            <ImageView
+                android:id="@+id/f_workout_history_dateImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ign_f_workout_history_date_textview"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Begin workout listview -->
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" 
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" 
+        />
+
+</LinearLayout>

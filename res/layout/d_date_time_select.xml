@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+     >
+
+        <!--  Begin current date/time button -->
+    
+    <TextView
+        android:id="@+id/d_date_time_select_current"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Set to current date and time"
+        style="@style/text.Medium"
+        android:gravity="center"
+        android:background="@color/darkGreen"
+        android:textColor="@color/white"
+        />
+    
+    <!-- Begin header -->
+
+    <LinearLayout
+        android:id="@+id/d_date_time_select_lay_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/d_date_time_select_header_date"
+            layout="@layout/t_date_time_select_dialog_headerelement" />
+        
+        <include
+            android:id="@+id/d_date_time_select_header_time"
+            layout="@layout/t_date_time_select_dialog_headerelement" />
+    </LinearLayout>
+    
+    <!-- Begin Body -->
+
+    <DatePicker
+        android:id="@+id/d_date_time_select_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:endYear="2100"
+        android:startYear="1900"
+        android:visibility="visible"
+        android:calendarViewShown="false"
+         />
+    
+    <TimePicker
+        android:id="@+id/d_date_time_select_timePicker" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

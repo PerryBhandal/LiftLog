@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/t_exercise_history_sortable_header_lay_root"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/t_exercise_history_sortable_headerelement" android:id="@+id/t_exercise_history_sortable_header_date" />
+        <include layout="@layout/t_exercise_history_sortable_headerelement" android:id="@+id/t_exercise_history_sortable_header_weight" />
+        <include layout="@layout/t_exercise_history_sortable_headerelement" android:id="@+id/t_exercise_history_sortable_header_reps" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider.thinDivider"
+        />
+    
+</LinearLayout>

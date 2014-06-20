@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LiftLog</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_routine_name_edittext_hint">Routine Name</string>
+    <string name="new_routine_name_error_default">ERROR</string>
+    <string name="new_routine_name_prompt">Enter a name for your new routine.</string>
+    
+</resources>

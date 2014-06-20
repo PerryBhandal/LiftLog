@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+   <color name="darkBlue">#0069b8</color>
+   <color name="medBlue">#0075ce</color>
+   <color name="lightBlue">#0082e4</color>
+   <color name="lightGrey">#b7b7b7</color>
+   <color name="opaqueGray">#C0C0C0</color>
+   
+   <color name="darkGreen">#309d7f</color>
+   <color name="lightGreen">#38b694</color>
+	<color name="opaqueLightGreen">#CC06b384</color>
+   
+   <color name="white">#FFFFFF</color>
+   
+   <color name="orange">#ed7500</color>
+   
+   <color name="black">#000000</color>
+   <color name="grey">#757575</color>
+   <color name="neonGreen">#0ed220</color>
+   <color name="darkRed">#a20000</color>
+   <color name="textGrey">#C0C0C0</color>
+   <color name="darkGrey">#484848</color>
+   
+   <!--  New colors for new template -->
+   <color name="newTempBg">#383b41</color>
+   <color name="newTempBlueHeader">#3d6ccc</color>
+   <color name="newTempBlueHeadrDark">#4f82e9</color>
+   <color name="newTempDivider">#d6d6d6</color>
+   <color name="newTempStaticHeader">#f6f6f6</color>
+   
+   
+</resources>
